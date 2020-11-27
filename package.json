@@ -1,15 +1,16 @@
 {
-    "name": "@nix2/package-name",
+    "name": "ymca-cli",
     "version": "1.0.0",
-    "description": "PACKAGE_DESCRIPTION",
+    "description": "Manage YMCA Reservation from the command line",
     "main": "./dist/index.js",
     "types": "./dist/index.d.ts",
-    "repository": "https://github.com/nix2io/package-template.git",
-    "author": "Name <name@nix2.io>",
-    "license": "CC-BY-1.0",
+    "repository": "https://github.com/k2on/ymca-cli.git",
+    "author": "Max Koon <maxk@nix2.io>",
+    "license": "MIT",
     "private": false,
     "prettier": "@nix2/prettier-config",
     "scripts": {
+        "start": "ts-node --transpile-only src/index.ts",
         "format": "prettier --write ./src/**",
         "test-format": "prettier --check ./src/**",
         "test": "mocha -r ts-node/register tests/**",
@@ -19,6 +20,7 @@
     },
     "devDependencies": {
         "@nix2/prettier-config": "^1.0.2",
+        "@types/inquirer": "^7.3.1",
         "@types/mocha": "8.0.4",
         "@types/node": "14.14.9",
         "@typescript-eslint/eslint-plugin": "4.8.1",
@@ -33,5 +35,16 @@
     },
     "files": [
         "dist"
-    ]
+    ],
+    "dependencies": {
+        "ak-scheduler": "^1.0.0",
+        "colors": "^1.4.0",
+        "commander": "^6.2.0",
+        "inquirer": "^7.3.3",
+        "moment": "^2.29.1",
+        "ora": "^5.1.0"
+    },
+    "bin": {
+        "ymca": "./dist/index.js"
+    }
 }
