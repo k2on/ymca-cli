@@ -1,18 +1,18 @@
-<p align="center"><img height="220px" src="https://i.imgur.com/48BeKfE.png" alt="Logo" /><p>
+<p align="center"><img height="220px" src="https://s3.amazonaws.com/ymca-ynet-prod/files/seo/ymca-logo-orange.png" alt="Logo" /><p>
 
 <p align="center">
-  <strong>{Name}</strong><br />
-  <sub>{Description}</sub>
+  <strong>YMCA CLI</strong><br />
+  <sub>Manage ymca reservations</sub>
 </p>
 
 <p align="center">
-  [ <a href="#installation">Installation 💾</a> | <a href="#usage">Usage 🤓</a> | <a href="https://www.npmjs.com/package/@nix2/PACKAGE_NAME">NPM 📦</a> | <a href="https://github.com/nix2io/readme-template">Github 🕸</a> ]
+  [ <a href="#installation">Installation 💾</a> | <a href="#usage">Usage 🤓</a> | <a href="https://www.npmjs.com/package/ymca-cli">NPM 📦</a> | <a href="https://github.com/k2on/ymca-cli">Github 🕸</a> ]
 </p>
 
 # Installation
 
 ```sh
-yarn add @nix2/PACKAGE_NAME
+npm i -g ymca-cli
 ```
 
 # Usage
